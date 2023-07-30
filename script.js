@@ -1,16 +1,10 @@
 
-let rpsChoice = ["Rock","Paper","Scissors"]
 
-let randomRpsChoice = Math.floor(Math.random() * rpsChoice.length);
+function getComputerChoice(){
+    rpsChoice = ["Rock","Paper","Scissors"];
+    randomRpsIndex = Math.floor(Math.random()*rpsChoice.length);
+    randomRpsChoice = rpsChoice[randomRpsIndex];
+    return(randomRpsChoice);
+};
 
-console.log("randomRpsChoice");
-
-// function getRandomArray(arr){
-//     const randomIndex = Math.floor(Math.random()*arr.length)
-// };
-
-// function getComputerChoice(){
-
-// };
-
-// 
+console.log(getComputerChoice());
