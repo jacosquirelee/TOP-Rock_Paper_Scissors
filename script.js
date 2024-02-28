@@ -10,9 +10,6 @@ function getComputerChoice(){
     return(randomRpsChoice);
 };
 
-// const computerSelection = getComputerChoice();
-
-
 // player picks rock, paper or scissors
 function getPlayerChoiceAndValidate(){
     let getPlayerChoice = prompt("write choice here!");
@@ -36,10 +33,7 @@ function getPlayerChoiceAndValidate(){
     }
 }
 
-// let playerSelection = getPlayerChoiceAndValidate();
-
 // PLAY GAME!
-
 function playRound(playerSelection, computerSelection){
     
     if(playerSelection === computerSelection){
@@ -78,7 +72,6 @@ function playRound(playerSelection, computerSelection){
 }
 
 // play 5 rounds of rock paper scissors
-
 for (let i = 0; i < 5; i++) {
     let playerSelection = getPlayerChoiceAndValidate();
     let computerSelection = getComputerChoice();
@@ -86,11 +79,4 @@ for (let i = 0; i < 5; i++) {
 }
 
 // display final score
-
 alert("Player Score: " + playerScore + "\nComputer Score: " + computerScore);
-
-
-// console.log(computerSelection);
-// console.log(playerSelection);
-// console.log(playerScore);
-// console.log(computerScore);
